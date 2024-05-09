@@ -1,20 +1,10 @@
-/* import java.util.Scanner;
-import java.util.Random;
-
-public class Main {
-  public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-
-    int numAle;
-    Random ran = new Random();
-    numAle = ran.nextInt(6)+1;
-    System.out.println(numAle);
-
-    scanner.close();
-  }
-
-} */
-
+/* 
+7.- Diseñe un algoritmo que califique el puntaje obtenido en el lanzamiento de tres dados en función a la cantidad de Seis obtenidos, de acuerdo a lo siguiente:
+- Seis en los tres dados: excelente 
+- Seis en dos dados: muy bien 
+- Seis en un dado: regular 
+- Ningún seis: pésimo
+Sacchetti, Maria Giselle C2 */
 import java.util.Random;
 
 public class Main {
@@ -44,12 +34,30 @@ public class Main {
                 calificacion = "regular";
                 break;
             default:
-                calificacion = "pésimo";
+                calificacion = "pesimo";
         }
 
        
         System.out.println("Dados lanzados: " + dado1 + ", " + dado2 + ", " + dado3);
         System.out.println("Seis obtenidos: " + seisObtenidos);
-        System.out.println("Calificación: " + calificacion);
+        System.out.println("Calificacion obtenida: " + calificacion);
     }
 }
+
+
+/* import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    int numAle;
+    Random ran = new Random();
+    numAle = ran.nextInt(6)+1;
+    System.out.println(numAle);
+
+    scanner.close();
+  }
+
+} */
